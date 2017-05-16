@@ -8,17 +8,87 @@
 	<link rel="stylesheet" href="css/demo.css" />
 </head>
 <body>
+	<div class="container">
+	<!-- row 1: navigation -->
 
-	<div id="container"> -->	
-		<div id="info">
-			<div class="info-wrapper">
-				<h2>TwitterMax is an fullscreen Twitter client that passively scrolls through your timeline, one Tweet at a time. Built for Android phones and tablets with Bootstrap, Codebird-PHP, event-driven programming & the Twitter API. Login at Twitter, and give TwitterMax permission to stream your timeline for a immersive and addictive experience. <a href="http://www.queness.com/post/14004/easiest-way-to-retrieve-twitter-timeline-and-hashtags-twitter-oauth-api-11">Read Tutorial</a></h2>
-			</div>
-		</div>	
+    <!-- begin rewrite of navbar-collapsible-left -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-faded">
+      <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-		<div id="jstwitter"></div>
-			
-	</div> end container -->	
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav col-lg-1"> <!-- was mr-auto mt-2 mt-md-0 in demo -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacy.html">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tos.html">Terms Of Service</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-header col-lg-3">
+        <button type="button" class="btn btn-secondary">Home Timeline</button><!-- menu item should change with user input -->
+      </div>
+      <div class="navbar-header col-lg-2 col-lg-offset-2">333
+
+    </nav>
+
+    <!-- begin HCEC project#2 navbar for reference -->
+    <div class="row">
+    	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  MENU
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                    <!-- <li class="active"><a href="index.html">TwitterMax</a></li> -->
+                    <li class="dropdown"><a href="about.html" data-toggle="dropdown">TwitterMax <span class="caret"></span></a>
+                    	<ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="tos.html">Terms Of Service</a></li>
+                        </ul>                    
+                    </li><!-- turn below into a proper webstore URL -->
+                    <li><a href='https://play.google.com/store/apps/details?id=com.twittermax'>
+                    <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+                    </li>  
+                </ul> 
+            </div>
+         </nav> 
+    </div>
+
+	<!-- row 2: article/aside -->
+    <div class="row">
+    	<article class="col-lg-offset-1 col-sm-offset-1 col-lg-8 col-sm-7 col-lg-push-3 col-sm-push-4">
+            <h1>Our Mission</h1>
+        </article>
+        <aside class="col-lg-3 col-sm-4 col-lg-pull-9 col-sm-pull-8">
+            <h2>We try</h2>
+        </aside>
+    </div>
+
+        <div id="container">    
+        <div id="info">
+            <div class="info-wrapper">
+                <h2>TwitterMax is an fullscreen Twitter client that passively scrolls through your timeline, one Tweet at a time. Built for Android phones and tablets with Bootstrap, Codebird-PHP, event-driven programming & the Twitter API. Login at Twitter, and give TwitterMax permission to stream your timeline for a immersive and addictive experience. <a href="http://www.queness.com/post/14004/easiest-way-to-retrieve-twitter-timeline-and-hashtags-twitter-oauth-api-11">Read Tutorial</a></h2>
+            </div>
+        </div>  
+
+        <div id="jstwitter"></div>
+            
+
+        </div> <!-- end container -->
 
 </body>
 <!-- did Queness inject this or Twitter? <script type="text/javascript" src="/js/bsa.js"></script> -->
